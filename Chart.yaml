@@ -5,3 +5,8 @@ type: application
 version: 0.0.1
 sources:
   - https://github.com/packethost/k8s-core-pritunl
+dependencies:
+  - name: mongodb-sharded
+    repository: https://charts.bitnami.com/bitnami
+    version: 3.5.0
+    add: bitnami
