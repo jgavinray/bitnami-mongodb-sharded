@@ -70,7 +70,7 @@ usePasswordFile: false
 ## Number of MongoDB(R) Shards
 ## ref: https://docs.mongodb.com/manual/core/sharded-cluster-shards/
 ##
-shards: 2
+shards: 3
 
 ## Shard replica set properties
 ## ref: https://docs.mongodb.com/manual/replication/index.html
@@ -81,7 +81,7 @@ shardsvr:
   dataNode:
     ## Number of replicas. A value of replicas=1 is simply a primary node
     ##
-    replicas: 1
+    replicas: 2
     ## Configure resource requests and limits
     ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
     ##
@@ -944,7 +944,7 @@ common:
 ## volumePermissions: Change the owner and group of the persistent volume mountpoint to runAsUser:fsGroup values from the securityContext section.
 ##
 volumePermissions:
-  enabled: false
+  enabled: true
   image:
     registry: docker.io
     repository: bitnami/bitnami-shell
